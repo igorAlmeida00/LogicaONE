@@ -15,12 +15,12 @@ let altura = Number(prompt(`${nome}, informe a sua altura:`));
 function calculaImc(peso, altura) {
   let imc = Math.round(peso / (altura * altura));
 
-  if(imc > 30) {
-    console.log(`Voce esta acima do peso`)
-  } else if(imc < 18) {
-    console.log(`Voce esta abaixo do peso`)
+  if(imc > 35) {
+    console.log(`Seun indice IMC esta acima da recomendaco da OMS`)
+  } else if(imc < 18.5) {
+    console.log(`Seu indice IMC esta abaixo da recoemndacao da OMS.`)
   } else {
-    console.log(`Parabens voce esta muito bem`)
+    console.log(`PARABENS! Seu IMC esta dentro do recomentado.`)
   }
 
   return imc;
